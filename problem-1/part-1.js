@@ -38,8 +38,8 @@ console.log(formaDate());*/
 /* create a new string adding "New!" in front of a given string if
 the given string beging with "New!" already then return the original string  */
  
-const addNew = (str) =>'New! ${str}';
-console.log(addNew('New! Offers'));
+/*const addNew = (str) =>'New! ${str}';
+console.log(addNew('New! Offers'));*/
 
 
 

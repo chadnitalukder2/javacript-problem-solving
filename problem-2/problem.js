@@ -20,7 +20,7 @@ console.log(a, b);*/
 
 
 //2. how to copy thing from clipboard
-function copyToClipBoard(str){
+/*function copyToClipBoard(str){
     const element = document.createElement
     ("textarea");
     element.value = str;
@@ -32,7 +32,7 @@ function copyToClipBoard(str){
 function handelClick(){
     let text = document.querySelector("#text");
     copyToClipBoard(text.innerHTML)
-}
+}*/
 
 //3. destructuring aliases
 //4. get value as data type
