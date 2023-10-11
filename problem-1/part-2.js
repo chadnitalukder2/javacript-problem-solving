@@ -27,8 +27,11 @@ console.log(firstHalf('temples'));*/
     console.log(concatenate('junior', 'developer'));*/
 
 
-
-
+//problem-4 find out which one is nearest to 100
+const closesetTo100 = (a, b) => (100 - a) < (100 - b) ? a : b;
+console.log(closesetTo100(99, 1));
+console.log(closesetTo100(49, 51));
+console.log(closesetTo100(50, 50));
 
 
 
