@@ -21,4 +21,17 @@ console.log(countEventNumber(createArrayOfNumbers(6)));
 console.log(countEventNumber(createArrayOfNumbers(10)));*/
 
 
+//problem-3  check whether a given array of integers is assending order
+const isAscending = (arr) =>{
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i+1] < arr[i])
+        return false;
+    }
+    return true;
+}
+console.log(isAscending([1, 2, 3, 4, 5, 6]));
+console.log(isAscending([1, 7, 3, 9, 8, 6]));
+console.log(isAscending([1, 2, 3, 7, 8, 9]));
+
+
 
