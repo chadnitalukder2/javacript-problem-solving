@@ -22,7 +22,7 @@ console.log(countEventNumber(createArrayOfNumbers(10)));*/
 
 
 //problem-3  check whether a given array of integers is assending order
-const isAscending = (arr) =>{
+/*const isAscending = (arr) =>{
     for(let i = 0; i < arr.length; i++){
         if(arr[i+1] < arr[i])
         return false;
@@ -31,7 +31,14 @@ const isAscending = (arr) =>{
 }
 console.log(isAscending([1, 2, 3, 4, 5, 6]));
 console.log(isAscending([1, 7, 3, 9, 8, 6]));
-console.log(isAscending([1, 2, 3, 7, 8, 9]));
+console.log(isAscending([1, 2, 3, 7, 8, 9]));*/
+
+
+//problem-4 get the largest even number from an array of integers
+const largestEven = (arr) =>
+    Math.max(...arr.filter(num => num % 2 === 0));
+    console.log(largestEven([1,2,3,4,5,6]));
+    console.log(largestEven([66,2,86,4,5,79]));
 
 
 
