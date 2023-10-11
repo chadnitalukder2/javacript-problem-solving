@@ -28,12 +28,22 @@ console.log(firstHalf('temples'));*/
 
 
 //problem-4 find out which one is nearest to 100
-const closesetTo100 = (a, b) => (100 - a) < (100 - b) ? a : b;
+/*const closesetTo100 = (a, b) => (100 - a) < (100 - b) ? a : b;
 console.log(closesetTo100(99, 1));
 console.log(closesetTo100(49, 51));
-console.log(closesetTo100(50, 50));
+console.log(closesetTo100(50, 50));*/
 
 
+//problem-5 check a given string contains 2 to 4 occurrences of a specified character
+/*const countChars = (str, char) =>
+str.split('').filter(ch => ch === char).length;
 
+const contains2To4 = (str, char) =>
+countChars(str, char) >= 2 && countChars(str, char) <= 4;
 
+console.log(contains2To4('ooh!', 'o'));
+console.log(contains2To4('oh!', 'o'));
+console.log(contains2To4('oooh!', 'o'));
+console.log(contains2To4('ooooh!', 'o'));
+console.log(contains2To4('oooooh!', 'o'));*/
 
