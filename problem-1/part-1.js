@@ -27,11 +27,22 @@ console.log(getFilename("webpack.config.js"));*/
 //problem-4  get current date
 //mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
 
-const formaDate = (date = new Date()) =>{
+/*const formaDate = (date = new Date()) =>{
     const days = date. getDate();
     const months = date.getMonth();
     const years = date.getFullYear();
     return `${days} / ${months} / ${years}`
 }
-console.log(formaDate());
+console.log(formaDate());*/
+
+/* create a new string adding "New!" in front of a given string if
+the given string beging with "New!" already then return the original string  */
+ 
+const addNew = (str) =>'New! ${str}';
+console.log(addNew('New! Offers'));
+
+
+
+
+
 
