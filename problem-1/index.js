@@ -24,4 +24,14 @@ console.log(getFilename("webpack.config.js"));*/
  .join('');
  console.log(moveCharasForward('abcde'));*/
 
+//problem-4  get current date
+//mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+
+const formaDate = (date = new Date()) =>{
+    const days = date. getDate();
+    const months = date.getMonth();
+    const years = date.getFullYear();
+    return `${days} / ${months} / ${years}`
+}
+console.log(formaDate());
 
