@@ -10,10 +10,21 @@ console.log(makeNewString('abcdef'));
 console.log(makeNewString('abc123abc123'));
 console.log(makeNewString('ab'));*/
 
+//problem-2
+/*extract the first half of a string of even length*/
+
+/*const firstHalf = (str) => str.slice(0, str.length / 2);
+console.log(firstHalf('temp'));
+console.log(firstHalf('temple'));
+console.log(firstHalf('temples'));*/
 
 
+//problem-3 concatenate two strings except their first character
+/*const concatenate = (str1, str2) => 
+    str1.slice(1) + str2.slice(1);
 
-
+    console.log(concatenate('abc', 'def'));
+    console.log(concatenate('junior', 'developer'));*/
 
 
 
