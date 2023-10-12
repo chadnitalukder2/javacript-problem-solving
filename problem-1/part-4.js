@@ -75,7 +75,7 @@ console.log(countLetters('abcde', ['b', 'u']));
 */
 
 //problem-3 funtion to convert an amount to coins
-const countCoin = ( money, coins = [25, 10, 5, 2, 1]) => {
+/*const countCoin = ( money, coins = [25, 10, 5, 2, 1]) => {
 
 const totalCoins = [];
 for(let i = 0; i < coins.length; i++){
@@ -87,5 +87,18 @@ for(let i = 0; i < coins.length; i++){
 }
 return totalCoins;
 }
-console.log(countCoin(54));
+console.log(countCoin(54));*/
+
+//problem-4 extract unique characters from a string
+const getUniqueChars = (str) =>
+str.split('').filter(
+    (item, index, arr) => 
+    arr.slice(index + 1).indexOf(item) === -1
+);
+console.log(getUniqueChars('aaaabbbbccccdddd'));
+
+
+
+
+
 
