@@ -37,8 +37,7 @@ console.log(largestEven([1, 2, 3, 4, 5, 6]));
 console.log(largestEven([66, 2, 86, 4, 5, 79]));*/
 
 //problem-5 replace the first digit in a string (should contains at least digit) with $ character.
-const replaceFirstDigit = (str) =>
-    str.replace(/[0-9]/g, '$') ;
-    console.log(replaceFirstDigit('Abhnjn1jk'));
-    console.log(replaceFirstDigit('123bhnjn1jk'));
-    console.log(replaceFirstDigit('Abhnjn1j458'));
+/*const replaceFirstDigit = (str) => str.replace(/[0-9]/g, "$");
+console.log(replaceFirstDigit("Abhnjn1jk"));
+console.log(replaceFirstDigit("123bhnjn1jk"));
+console.log(replaceFirstDigit("Abhnjn1j458"));*/
