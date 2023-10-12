@@ -57,18 +57,35 @@ console.log(getRandomHexColor());*/
 //part-5-----------------------------------------------------------------------------------------------------
 
 //problrm-1 returns a passed string with letters in alphabetical order
-const alphabeticalOrder = (str) =>
+/*const alphabeticalOrder = (str) =>
     str.split('').sort((a,b) => a > b ? 1 : -1)
     .join('');
 console.log(alphabeticalOrder('webmaster'));
-console.log(alphabeticalOrder('javascript'));
+console.log(alphabeticalOrder('javascript'));*/
 
+//problem-2 that accepts a string as a parameter and counts the number of vowels within the string
+/*const countLetters = (
+    str, letters = ['a', 'e', 'i', 'o', 'u']) =>
+    str
+        .split('')
+        .filter(s => letters.indexOf(s) > -1)
+        .length;
+console.log(countLetters('abcde')); 
+console.log(countLetters('abcde', ['b', 'u']));
+*/
 
+//problem-3 funtion to convert an amount to coins
+const countCoin = ( money, coins = [25, 10, 5, 2, 1]) => {
 
-
-
-
-
-
-
+const totalCoins = [];
+for(let i = 0; i < coins.length; i++){
+    const thisCoinNum =  Math.floor(money / coins[i]);
+    for(let y = 0; y < thisCoinNum; y++) {
+        totalCoins.push(coins[i]);
+    }
+    money -= coins[i] * thisCoinNum;
+}
+return totalCoins;
+}
+console.log(countCoin(54));
 
