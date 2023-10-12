@@ -24,7 +24,7 @@ const str = `abc, def, ghi
 console.log(parseCSV(str));*/
 
 //problem-4  program to generate a random hexadecimal color code.
-const getRandomHexNumber = () =>
+/*const getRandomHexNumber = () =>
     Math.floor(Math.random() * 16).toString(16);
 
 const getRandomHexColor = () => '#' + Array.from( {length: 6}).map(getRandomHexNumber).join('');
@@ -32,4 +32,35 @@ console.log(getRandomHexColor());
 console.log(getRandomHexColor());
 console.log(getRandomHexColor());
 console.log(getRandomHexColor());
-console.log(getRandomHexColor());
+console.log(getRandomHexColor());*/
+
+//problem-5
+/* function that returns true if the provided predicate
+ function returns true for all elements in a collection, false otherwise*/
+
+ const isEveryElem = (arr, fn) => {
+    for (let i = 0; i < arr.length; i++){
+        if (!fn(arr[i])){
+            return false;
+        }
+    }
+    return true
+ }
+ console.log(isEveryElem([1, 2, 3, 4, 5], (x) => x > 0));
+ console.log(isEveryElem([1, 2, 3, 4, 5], (x) => x > 3));
+
+// console.log(isEveryElem[1, 2, 3, 4, 5].every(x => x > 0));
+ //console.log( isEveryElem[1, 2, 3, 4, 5].every(x => x > 3));
+
+
+
+
+
+
+
+
+
+
+
+
+
