@@ -90,14 +90,23 @@ return totalCoins;
 console.log(countCoin(54));*/
 
 //problem-4 extract unique characters from a string
-const getUniqueChars = (str) =>
+/*const getUniqueChars = (str) =>
 str.split('').filter(
     (item, index, arr) => 
     arr.slice(index + 1).indexOf(item) === -1
+);*/
+// const getUniqueChars = (str) =>
+//     [... new Set(str.split(''))]
+// console.log(getUniqueChars('aaaabbbbccccdddd'));
+
+
+//problem-5 find the first not repeated character
+const getNinRepeatedChars = (str) =>
+str.split('')
+.filter((item, index, arr) =>
+arr.filter(arrItem => arrItem === item).length === 1
 );
-console.log(getUniqueChars('aaaabbbbccccdddd'));
-
-
+console.log(getNinRepeatedChars('aabbccddffggejjkkffjj'));
 
 
 
