@@ -38,7 +38,7 @@ console.log(getRandomHexColor());*/
 /* function that returns true if the provided predicate
  function returns true for all elements in a collection, false otherwise*/
 
- const isEveryElem = (arr, fn) => {
+/* const isEveryElem = (arr, fn) => {
     for (let i = 0; i < arr.length; i++){
         if (!fn(arr[i])){
             return false;
@@ -51,9 +51,17 @@ console.log(getRandomHexColor());*/
 
 // console.log(isEveryElem[1, 2, 3, 4, 5].every(x => x > 0));
  //console.log( isEveryElem[1, 2, 3, 4, 5].every(x => x > 3));
+*/
 
 
+//part-5-----------------------------------------------------------------------------------------------------
 
+//problrm-1 returns a passed string with letters in alphabetical order
+const alphabeticalOrder = (str) =>
+    str.split('').sort((a,b) => a > b ? 1 : -1)
+    .join('');
+console.log(alphabeticalOrder('webmaster'));
+console.log(alphabeticalOrder('javascript'));
 
 
 
