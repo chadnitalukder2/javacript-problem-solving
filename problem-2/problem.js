@@ -75,3 +75,41 @@ console.log(y);*/
 for ( let i = 0, j = 3; i <= 3; i++, j--){
     console.log("a [" + i + "][" + j + "] = " + a[i][j]);
 }*/
+
+
+
+//problem -1 what will be the output of the below code?
+/*console.log([] + []); // blank ""
+console.log({} + []); //[object object] ""
+ true + 5 = 6*/
+
+//pronblem-2 what will be the output of bolow code?
+/*function myFunction() {
+    return 'Bangladesh'
+}
+const string = myFunction `hello`;
+console.log(string);*/
+
+//problem-3 how to make all text contents of a website editables?
+//contenteditable
+
+//problem-4  what will be the output ofbelow code?
+/*function b(){
+    console.log(`the length is ${this.length}`);
+}
+let a ={
+    length: 10,
+    method: function(b){
+        arguments[0]();
+    }
+};
+a.method(b, 5);*/
+
+//problem-5  what will be the output ofbelow code?
+/*const a = 'constructor';
+console.log(a[a](05));*/
+
+
+
+
+
