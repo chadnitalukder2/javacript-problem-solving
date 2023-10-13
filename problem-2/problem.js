@@ -52,12 +52,15 @@ console.log(element);*/
 console.log([...new Set(array)]);*/
 
 //6. compare two arrays by value
-const hasSameElements = (a, b) => {
+/*const hasSameElements = (a, b) => {
     return a.length === b.length && a.every((v, i) =>
     v === b[i])
 };
 console.log(hasSameElements([1, 2, 6], [1, 2, 6]));
-console.log(hasSameElements([1, 6, 5], [1, 2, 6]));
+console.log(hasSameElements([1, 6, 5], [1, 2, 6]));*/
 
 //7. shuffling an array
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(numbers.sort(() => Math.random() - 0.5));
+
 //8. using comma operator
