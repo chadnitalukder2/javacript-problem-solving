@@ -123,7 +123,7 @@ console.log(a[a](05));*/
 console.log(myFunction(2, 5, 1, 4, 3));*/
 
 //debounce handler   
-const button = document.getElementById("button");
+/*const button = document.getElementById("button");
 
 function debounce(fn, delay){
     let timeoutId ;
@@ -139,7 +139,24 @@ function debounce(fn, delay){
 
 button.addEventListener("click", debounce(function(){
 console.log("clicked");
-}, 2000 ))
+}, 2000 ));*/
+
+
+///countDuplicates fruits
+/*const fruits =["mango", "apple", "lchi", "mango","apple", "stroveri"];
+function countDuplicates(data){
+    const output = {};
+
+    data.map(d =>{
+        output[d] = (output[d] || 0) + 1
+    });
+
+    return output;
+}
+console.log(countDuplicates(fruits));*/
+
+
+
 
 
 
