@@ -109,6 +109,18 @@ a.method(b, 5);*/
 /*const a = 'constructor';
 console.log(a[a](05));*/
 
+//problem-6 what will be output?
+//console.log(0.1 + 0.2);
+
+//problem-7 
+//console.log(("Bangladesh").__proto__.proto__.proto.__);
+
+//problem-8 make a function that sorts its argument without using loops
+
+const myFunction = function(){
+    return  [].slice.call(arguments).sort();
+};
+console.log(myFunction(2, 5, 1, 4, 3));
 
 
 
