@@ -156,7 +156,7 @@ function countDuplicates(data){
 console.log(countDuplicates(fruits));*/
 
 //  reverse word in a string
-const str = " I love Bangladesh";
+/*const str = " I love Bangladesh";
 
 function reverseWord(data){
     const dataAsArray = data.split(" ");
@@ -167,7 +167,21 @@ function reverseWord(data){
 
 return result.join(" ");
 }
-console.log(reverseWord(str));
+console.log(reverseWord(str));*/
+
+//sorting words by length in a sentence by asc order
+const str = "Java is a Programming language";
+
+function sortWords(data){
+    const dataAsArray = str.split(" ");
+    dataAsArray.sort((a,b) => {
+        return a.length - b.length;
+    });
+    return dataAsArray.join(" ");
+}
+console.log(sortWords(str));
+
+
 
 
 
