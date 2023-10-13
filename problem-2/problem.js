@@ -170,7 +170,7 @@ return result.join(" ");
 console.log(reverseWord(str));*/
 
 //sorting words by length in a sentence by asc order
-const str = "Java is a Programming language";
+/*const str = "Java is a Programming language";
 
 function sortWords(data){
     const dataAsArray = str.split(" ");
@@ -179,8 +179,32 @@ function sortWords(data){
     });
     return dataAsArray.join(" ");
 }
-console.log(sortWords(str));
+console.log(sortWords(str));*/
 
+// memoizetion in javacript---------------------------------------------------------------------------
+
+function add(x){
+    return 10 + x ;
+}
+//higher ordrt function
+const memo = (func) => {
+    let cache = {};
+    return function(x){
+        if(cache[x]){
+            console.log('result from cache');
+            return cache[x]
+        }
+        else{
+            console.log('calculating result');
+            const result = func(x);
+            cache[x] = result;
+            return result;
+        }
+    }
+}
+const calculate = memo(add);
+console.log(calculate(10));
+console.log(calculate(10));
 
 
 
