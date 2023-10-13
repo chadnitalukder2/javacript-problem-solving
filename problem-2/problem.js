@@ -35,16 +35,29 @@ function handelClick(){
 }*/
 
 //problem-3. destructuring aliases
-const language ={
+/*const language ={
     name: "JavaScript",
     founded: 1995,
     founder: "Brendan Eich"
 };
 const{name: languageName, founder: createrName} = language;
-console.log(languageName, createrName);
+console.log(languageName, createrName);*/
 
 //4. get value as data type
+/*const element = document.querySelector('#number').valueAsNumber;
+console.log(element);*/
+
 //5. remove duplicate from array
+/*const array = [1, 2, 3, 4, 2, 3, 5, 6, 5, 2];
+console.log([...new Set(array)]);*/
+
 //6. compare two arrays by value
+const hasSameElements = (a, b) => {
+    return a.length === b.length && a.every((v, i) =>
+    v === b[i])
+};
+console.log(hasSameElements([1, 2, 6], [1, 2, 6]));
+console.log(hasSameElements([1, 6, 5], [1, 2, 6]));
+
 //7. shuffling an array
 //8. using comma operator
