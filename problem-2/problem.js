@@ -117,10 +117,29 @@ console.log(a[a](05));*/
 
 //problem-8 make a function that sorts its argument without using loops
 
-const myFunction = function(){
+/*const myFunction = function(){
     return  [].slice.call(arguments).sort();
 };
-console.log(myFunction(2, 5, 1, 4, 3));
+console.log(myFunction(2, 5, 1, 4, 3));*/
+
+//debounce handler   
+const button = document.getElementById("button");
+
+function debounce(fn, delay){
+    let timeoutId ;
+    return function(){
+        if(timeoutId){
+            clearTimeout(timeoutId);
+        }
+        timeoutId = setTimeout(() => {
+            fn();
+        }, delay);
+    };
+}
+
+button.addEventListener("click", debounce(function(){
+console.log("clicked");
+}, 2000 ))
 
 
 
