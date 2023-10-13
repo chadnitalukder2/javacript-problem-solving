@@ -101,12 +101,12 @@ str.split('').filter(
 
 
 //problem-5 find the first not repeated character
-const getNinRepeatedChars = (str) =>
+/*const getNinRepeatedChars = (str) =>
 str.split('')
 .filter((item, index, arr) =>
 arr.filter(arrItem => arrItem === item).length === 1
 );
-console.log(getNinRepeatedChars('aabbccddffggejjkkffjj'));
+console.log(getNinRepeatedChars('aabbccddffggejjkkffjj'));*/
 
 
 

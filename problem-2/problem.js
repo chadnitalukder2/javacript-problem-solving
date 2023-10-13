@@ -1,4 +1,4 @@
-//1. how can we swap values?
+//problem-1. how can we swap values?
 //let array =[1, 2, 3, 4, 5];
 /*let temp = array[0];
 array[0] = array[4];
@@ -19,7 +19,7 @@ b = a + (a = b) - b;
 console.log(a, b);*/
 
 
-//2. how to copy thing from clipboard
+//problem-2. how to copy thing from clipboard
 /*function copyToClipBoard(str){
     const element = document.createElement
     ("textarea");
@@ -34,7 +34,15 @@ function handelClick(){
     copyToClipBoard(text.innerHTML)
 }*/
 
-//3. destructuring aliases
+//problem-3. destructuring aliases
+const language ={
+    name: "JavaScript",
+    founded: 1995,
+    founder: "Brendan Eich"
+};
+const{name: languageName, founder: createrName} = language;
+console.log(languageName, createrName);
+
 //4. get value as data type
 //5. remove duplicate from array
 //6. compare two arrays by value
