@@ -155,9 +155,19 @@ function countDuplicates(data){
 }
 console.log(countDuplicates(fruits));*/
 
+//  reverse word in a string
+const str = " I love Bangladesh";
 
+function reverseWord(data){
+    const dataAsArray = data.split(" ");
+     const result = dataAsArray.map(d =>{
 
+        return d.split("").reverse().join("");
+     });
 
+return result.join(" ");
+}
+console.log(reverseWord(str));
 
 
 
